@@ -1,0 +1,259 @@
+:root {
+  --color-darkest: #343a40 !important;
+  --color-dark: #495057 !important;
+  --color-medium: #ced4da !important;
+  --color-light: #f1f3f5 !important;
+
+  --color-theme: #1098ad !important;
+  --color-accent: #ffa94d !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Codystar&display=swap");
+
+* {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box !important;
+}
+
+html {
+  font-size: 62.5% !important;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+body {
+  min-height: 100vh !important;
+  color: var(--color-light) !important;
+  background-color: var(--color-darkest) !important;
+  padding: 3.2rem !important;
+}
+
+.app {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.main {
+  width: 50rem !important;
+}
+
+.app-header {
+  width: 66rem !important;
+  margin-bottom: 4rem !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.error {
+  text-align: center !important;
+  font-size: 1.6rem !important;
+  font-weight: 500 !important;
+  padding: 2rem !important;
+  background-color: #495057 !important;
+  border-radius: 100px !important;
+}
+
+img {
+  width: 14rem !important;
+}
+
+h1 {
+  font-family: "Codystar" !important;
+  font-size: 5.6rem  !important;
+}
+
+h2 {
+  font-size: 3.6rem !important;
+  margin-bottom: 2rem !important;
+}
+
+h3 {
+  font-size: 2.4rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 4rem !important;
+}
+
+h4 {
+  font-size: 2.2rem !important;
+  font-weight: 600 !important;
+  margin-bottom: 2.4rem !important;
+}
+
+.start {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+}
+
+.progress {
+  margin-bottom: 4rem !important;
+  display: grid !important;
+  justify-content: space-between !important;
+  gap: 1.2rem !important;
+  grid-template-columns: auto auto !important;
+  font-size: 1.8rem !important;
+  color: var(--color-medium) !important;
+}
+
+progress {
+  -webkit-appearance: none !important;
+  width: 100% !important;
+  height: 12px !important;
+  grid-column: 1 / -1 !important;
+}
+
+::-webkit-progress-bar {
+  background-color: var(--color-medium) !important;
+  border-radius: 100px !important;
+}
+::-webkit-progress-value {
+  background-color: var(--color-theme) !important;
+  border-radius: 100px !important;
+}
+
+.btn {
+  display: block !important;
+  font-family: inherit !important;
+  color: inherit !important;
+  font-size: 2rem !important;
+  border: 2px solid var(--color-dark) !important;
+  background-color: var(--color-dark) !important;
+  padding: 1.2rem 2.4rem !important;
+  cursor: pointer !important;
+  border-radius: 100px !important;
+  transition: 0.3s !important;
+}
+
+.btn:not([disabled]):hover {
+  background-color: var(--color-darkest) !important;
+}
+
+.btn-option:not([disabled]):hover {
+  transform: translateX(1.2rem) !important;
+}
+
+.btn[disabled]:hover {
+  cursor: not-allowed !important;
+}
+
+.btn-ui {
+  float: right !important;
+}
+
+.options {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 1.2rem !important;
+  margin-bottom: 3.2rem !important;
+}
+
+.btn-option {
+  width: 100% !important;
+  text-align: left !important;
+}
+
+.correct {
+  background-color: var(--color-theme) !important;
+  border: 2px solid var(--color-theme) !important;
+  color: var(--color-light) !important;
+}
+.wrong {
+  background-color: var(--color-accent) !important;
+  border: 2px solid var(--color-accent) !important;
+  color: var(--color-darkest) !important;
+}
+
+.answer {
+  transform: translateX(2rem) !important;
+}
+
+.result {
+  background-color: var(--color-theme) !important;
+  color: var(--color-light) !important;
+  border-radius: 100px !important;
+  text-align: center !important;
+  padding: 2rem 0 !important;
+  font-size: 2rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 1.6rem !important;
+}
+
+.result span {
+  font-size: 2.2rem !important;
+  margin-right: 4px !important;
+}
+
+.highscore {
+  font-size: 1.8rem !important;
+  text-align: center !important;
+  margin-bottom: 4.8rem !important;
+}
+
+.loader-container {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  margin-top: 4rem !important;
+  gap: 1.6rem !important;
+
+  color: var(--color-medium) !important;
+  font-size: 1.4rem !important;
+}
+
+.timer {
+  float: left !important;
+  font-size: 1.8rem !important;
+  color: var(--color-medium) !important;
+  border: 2px solid var(--color-dark) !important;
+  padding: 1.35rem 2.8rem !important;
+  border-radius: 100px !important;
+}
+
+/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+.loader {
+  width: 50px !important;
+  height: 24px !important;
+  background: radial-gradient(circle closest-side, currentColor 90%, #0000) 0%
+      50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 50% 50%,
+    radial-gradient(circle closest-side, currentColor 90%, #0000) 100% 50% !important;
+  background-size: calc(100% / 3) 12px !important;
+  background-repeat: no-repeat !important;
+  animation: loader 1s infinite linear !important;
+}
+
+@keyframes loader {
+  20% {
+    background-position: 0% 0%, 50% 50%, 100% 50% !important;
+  }
+  40% {
+    background-position: 0% 100%, 50% 0%, 100% 50% !important;
+  }
+  60% {
+    background-position: 0% 50%, 50% 100%, 100% 0% !important;
+  }
+  80% {
+    background-position: 0% 50%, 50% 50%, 100% 100% !important;
+  }
+}
+
+/* ********** */
+/* First counter example */
+.counter {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 1rem !important;
+  font-size: 2rem !important;
+  font-weight: bold !important;
+  margin: 6rem !important;
+}
+
+.counter * {
+  font-size: inherit !important;
+  padding: 0.8rem !important;
+}
