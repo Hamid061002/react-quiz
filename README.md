@@ -2,10 +2,13 @@
 
 Technologies used in this project: Vite, Json server, ContextAPI
 
-run applicaition :
-open terminal
-npm run dev
+install app:
+- npm i
 
-run database :
-open terminal
-npm run server
+run applicaition :
+- open terminal
+- npm run dev
+
+run json server :
+- open terminal
+- npm run server
